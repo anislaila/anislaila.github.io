@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>
+        TEDK
+    </title>
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body id="bodyx">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            Gerbang Logika
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <p><img src="/images/simbolgerbangall.jpg"></p>
+<hr>
+<h2 id="Pengertian"><a href="#Pengertian" class="headerlink" title="Pengertian"></a>Pengertian</h2><p>Gerbang logika atau logic gates adalah suatu entitas dalam elektronika dan matematika Boolean ( struktur aljabar yang “mencakup intisari” operasi logika AND, OR, NOR, dan NAND dan juga teori himpunan untuk operasi union, interseksi dan komplemen) yang mengubah satu atau beberapa masukan logik menjadi sebuah sinyal keluaran logic. Gerbang logika terutama diimplementasikan secara elektronis menggunakan dioda atau transistor, akan tetapi dapat pula dibangun menggunakan susunan komponen-komponen yang memanfaatkan sifat-sifat elektromagnetik (relay), cairan, optik dan bahkan mekanik.</p>
+<p>secara sederhana Gerbang logika atau logic gates adalah proses pengolahan input bilangan biner dengan teori matematika boolean. Seperti yang kita ketahui, bilangan biner sendiri terdiri dari angka 1 dan 0.</p>
+<p>Logic gate ini direpresentasikan menggunakan tabel kebenaran. Jika memiliki nilai benar (true) akan ditunjukan dengan angka “1”. Sebaliknya, jika memiliki nilai salah (false) akan ditunjukan dengan angka “0”.</p>
+<blockquote>
+<p>1             ;   0<br>HIGH (Tinggi) ; LOW (Rendah)<br>ON (Hidup)    ; OFF (Mati)<br>TRUE (Benar)   ; FALSE (Salah)</p>
+</blockquote>
+<h2 id="Fungsi-Gerbang-Logika"><a href="#Fungsi-Gerbang-Logika" class="headerlink" title="Fungsi Gerbang Logika"></a>Fungsi Gerbang Logika</h2><p>Fungsi sistem gerbang logika (logic gate) adalah membentuk sirkuit digital yang terintegrasi.Seperti sebagai perintah atau penerjemah, dimana ia menghubungkan banyak perangkat atau komponen di dalamnya. Mulai dari IC (Integrated Circuit), Transistor, Dioda, Optik, Relay, dan beragam perangkat elektronik lainnya.</p>
+<p>Yang pada umumnya setiap gerbangnya memiliki tujuan atau fungsi berbeda. Namun secara garis besar ia dapat dikelompokkan menjadi beberapa rangkaian, mulai flip-flop, counter, multiplexer, demultiplexer, dan lain sebagainya.</p>
+<h2 id="Jenis-Gerbang-Logika"><a href="#Jenis-Gerbang-Logika" class="headerlink" title="Jenis Gerbang Logika"></a>Jenis Gerbang Logika</h2><p>Terdapat dua jenis gerbang logika, yaitu gerbang logika dasar dan gerbang logika kombinasi yang jika dijumlahkan terdapat 7 gerbang logika.</p>
+<ol>
+<li>Gerbang Logika Dasar </li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Gerbang Logika Dasar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AND</td>
+</tr>
+<tr>
+<td>OR</td>
+</tr>
+<tr>
+<td>NOT</td>
+</tr>
+</tbody></table>
+<p>a. Gebang logika AND<br>        <img src="/images/andgate.png" alt="andgate"></p>
+<blockquote>
+<p>Apabila semua atau salah satu input adalah bilangan biner berlogika <em>1</em> Maka Output akan menjadi <em>1</em><br>Sedangkan jika semua output adalah bilangan biner berlogika <em>0</em> Maka output akan berlogika <em>0</em><br> Simbol yang menandakan Operasi Gerbang Logika AND yaitu tanda titik (.) atau tidak tanda sama sekali.<br>Contohnya: Z = X.Y atau Z = XY</p>
+</blockquote>
+<p> IC Gerbang AND yang tersedia pada pasaran</p>
+<table>
+<thead>
+<tr>
+<th>TTL Logic AND Gate</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>74LS08 Quad 2-input</td>
+</tr>
+<tr>
+<td>74LS11 Triple 3-input</td>
+</tr>
+<tr>
+<td>74LS21 Dual 4-input</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>CMOS Logic AND Gate</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CD4081 Quad 2-input</td>
+</tr>
+<tr>
+<td>CD4073 Triple 3-input</td>
+</tr>
+<tr>
+<td>CD4082 Dual 4-input</td>
+</tr>
+</tbody></table>
+<p> b. Gerbang Logika OR<br> <img src="/images/gerbangOR.png" alt="andgate">  </p>
+<blockquote>
+<ul>
+<li>Gerbang OR digunakan untuk menghasilkan<br>logika  0  jika </li>
+<li>Apabila semua  masukan  berlogika  0 maka output yang dihasilkan 0</li>
+<li>Tetapi, jika  salah satu input terdapat bilangan biner <em>1</em> maka output yang dihasilkan <em>1</em></li>
+</ul>
+</blockquote>
+<p>c. Gerbang Logika NOT<br><img src="/images/notgate.png" alt="andgate"></p>
+<blockquote>
+<ul>
+<li>Sebagai Pembalik (Inverter)</li>
+<li>Nilai output akan berlawanan dengan inputnya.</li>
+</ul>
+</blockquote>
+<ol start="2">
+<li>Gerbang Logika Kombinasi</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Gerbang Logika Kombinasi</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NAND</td>
+</tr>
+<tr>
+<td>NOR</td>
+</tr>
+<tr>
+<td>XOR</td>
+</tr>
+<tr>
+<td>XNOR</td>
+</tr>
+</tbody></table>
+<p>a. Gerbang Logika NAND<br><img src="/images/nandgate.png" alt="andgate"></p>
+<blockquote>
+<ul>
+<li>Gerbang NAND mempunyai sifat kebalikan dari AND</li>
+<li>Bila sinyal keluaran ingin HIGH (1) salah satu atau kedua-dua input harus dalam keadaan LOW (0)</li>
+<li>Jika kedua input bernilai HIGH (1), maka output akan LOW (0). </li>
+<li>Komponen elektronika dari gerbang NAND adalah IC 74HC00, sebuah chip yang didalamnya terdapat 4 gerbang AND dengan 2 input. Variannya cukup banyak, ada yang DIP,DIL dan SMD.</li>
+</ul>
+</blockquote>
+<p>b. Gerbang Logika NOR<br><img src="/images/norgate.png" alt="andgate"></p>
+<blockquote>
+<ul>
+<li>Gabungan dari NOT dan OR</li>
+<li>Memiliki dua atau lebih sinyal masukan tetapi hanya satu sinyal keluaran.</li>
+<li>Memiliki sifat kebalikan dari OR</li>
+<li>Bila sinyal keluaran ingin LOW (0) maka salah satu atau semua sinyal masukan harus dalam keadaan HIGH (1)</li>
+<li>Jika kedua input bernilai LOW (0), maka output akan HIGH (1).</li>
+<li>Komponen elektronika dari gerbang NOR adalah IC 74HC02, sebuah chip yang didalamnya terdapat 4 gerbang NOR dengan 2 input. Variannya cukup banyak, ada yang DIP,DIL dan SMD. </li>
+</ul>
+</blockquote>
+<p>c. Gerbang Logika XOR<br><img src="/images/xorgate.png" alt="andgate"></p>
+<blockquote>
+<ul>
+<li>Gabungan dari 3 gerbang logika yaitu NOT, OR dan AND</li>
+<li>Gerbang XOR mempunyai sifat bila sinyal keluaran ingin HIGH (1) maka kedua input harus dalam keadaan logika yang berbeda </li>
+<li>Jika kedua input bernilai logika yang sama, maka output akan LOW (1).</li>
+<li>Komponen elektronika dari gerbang XOR adalah IC 74HC86, sebuah chip yang didalamnya terdapat 4 gerbang XOR dengan 2 input. Variannya cukup banyak, ada yang DIP,DIL dan SMD.</li>
+</ul>
+</blockquote>
+<p>d. Gerbang Logika XNOR<br><img src="/images/xnorgate.png" alt="andgate"></p>
+<blockquote>
+<ul>
+<li>Gerbang XNOR mempunyai sifat kebalikan dari XOR</li>
+<li>Bila sinyal keluaran ingin HIGH (1) maka kedua input harus dalam keadaan logika yang sama</li>
+<li>Jika kedua input bernilai logika berbeda , maka output akan LOW (0).</li>
+<li>Komponen elektronika dari gerbang XNOR adalah IC 74HC266, sebuah chip yang didalamnya terdapat 4 gerbang XNOR dengan 2 input. Variannya cukup banyak, ada yang DIP,DIL dan SMD.</li>
+</ul>
+</blockquote>
+
+    </div>
+
+    
+        <hr class="fhr">
+    
+</div>
+    <div class="footer" id="footer">
+    <p>Copyright © 2020 <a class="flink" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>-<a class="flink" target="_blank" rel="noopener" href="https://github.com/sanjinhub/hexo-theme-geek">Geek</a>.
+        <label class="el-switch el-switch-green el-switch-sm" style="vertical-align: sub;">
+            <input type="checkbox" name="switch" id="update_style">
+            <span class="el-switch-style"></span>
+        </label>
+<!--         <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+        </script> -->
+    </p>
+</div>
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="CmCti21ooOOIzFOhEyFkFvR0-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="FqiyUqbg7McKN2eG0MCewupf">
+
+<script src="/libs/jquery.min.js"></script>
+
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/js.js"></script>
+
+<style type="text/css">
+.v * {
+    color: #698fca;
+}
+
+.v .vlist .vcard .vhead .vsys {
+    color: #3a3e4a;
+}
+
+.v .vlist .vcard .vh .vmeta .vat {
+    color: #638fd5;
+}
+
+.v .vlist .vcard .vhead .vnick {
+    color: #6ba1ff;
+}
+
+.v a {
+    color: #8696b1;
+}
+
+.v .vlist .vcard .vhead .vnick:hover {
+    color: #669bfc;
+}
+</style>
+</body>
+
+</html>
