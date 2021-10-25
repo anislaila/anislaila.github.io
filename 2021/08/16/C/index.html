@@ -21,17 +21,31 @@
 
 <body id="bodyx">
     <div class="hd posts">
-    <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    <a onclick="history.back()"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    
     <div class="post-title">
         <p>
-            Komponen Pasif
+            K.D 3 Membangun OP-AMP
         </p>
         <hr>
     </div>
     <div class="post-content">
-        <p>Komponen pasif adalah komponen elektronika yang dalam pengoperasiannya tidak membutuhkan sumber tegangan atau sumber arus tersendiri. Komponen pasif pada umumnya digunakan sebagai pembatas arus, pembagi tegangan, tank circuit dan filter pasif.</p>
-<p>dibawah ini adalah beberapa komponen pasif beserta definisi dan fungsinya.</p>
-<h3 id="1-Resistor"><a href="#1-Resistor" class="headerlink" title="1. Resistor"></a>1. <a href="/Z/A1">Resistor</a></h3><h3 id="2-Kapasitor"><a href="#2-Kapasitor" class="headerlink" title="2. Kapasitor"></a>2. <a href="/Z/A2">Kapasitor</a></h3><h3 id="3-Induktor"><a href="#3-Induktor" class="headerlink" title="3. Induktor"></a>3. <a href="/Z/A3">Induktor</a></h3>
+        <h2 id="OP-AMP"><a href="#OP-AMP" class="headerlink" title="OP AMP"></a>OP AMP</h2><p> OP-AMP atau Operational Amplifier yaitu suatu rangkaian terintegrasi yang berisi beberapa tingkat dan konfigurasi penguat diferensial. Penguat operasional memiliki dua masukan dan satu keluaran serta memiliki penguatan DC yang tinggi. Untuk dapat bekerja dengan baik, penguat operasional memerlukan tegangan catu yang simetris yaitu tegangan yang berharga positif (+V) dan tegangan yang berharga negatif (-V) terhadap tanah (ground).<br> Beberapa rangkaian lup tertutup op-amp yang umum digunakan:</p>
+<h3 id="1-OP-AMP-Sebagai-penguat-non-inverting"><a href="#1-OP-AMP-Sebagai-penguat-non-inverting" class="headerlink" title="1. OP-AMP Sebagai penguat non inverting"></a>1. <a href="/Y/C1">OP-AMP Sebagai penguat non inverting</a></h3><h3 id="2-OP-AMP-Sebagai-penguat-inverting"><a href="#2-OP-AMP-Sebagai-penguat-inverting" class="headerlink" title="2. OP-AMP Sebagai penguat inverting"></a>2. <a href="/Y/C2">OP-AMP Sebagai penguat inverting</a></h3><h3 id="3-OP-AMP-Sebagai-integrator"><a href="#3-OP-AMP-Sebagai-integrator" class="headerlink" title="3. OP-AMP Sebagai integrator"></a>3. <a href="/Y/C3">OP-AMP Sebagai integrator</a></h3><h3 id="4-OP-AMP-Sebagai-differensiator"><a href="#4-OP-AMP-Sebagai-differensiator" class="headerlink" title="4. OP-AMP Sebagai differensiator"></a>4. <a href="/Y/C4">OP-AMP Sebagai differensiator</a></h3><h3 id="5-OP-AMP-Sebagai-comparator"><a href="#5-OP-AMP-Sebagai-comparator" class="headerlink" title="5. OP-AMP Sebagai comparator"></a>5. <a href="/Y/C6">OP-AMP Sebagai comparator</a></h3><h3 id="6-Rangkaian-OP-AMP"><a href="#6-Rangkaian-OP-AMP" class="headerlink" title="6. Rangkaian OP-AMP"></a>6. <a href="/Y/C7">Rangkaian OP-AMP</a></h3><p><img src="/images/opamp.png" alt="andgate"></p>
+<ul>
+<li>Terminal-terminal luar di samping power supply ( ±Vcc)<br>adalah dua input vi1 dan vi2 serta terminal keluran v out.</li>
+<li>Aplikasi op-amp yang paling sering dipakai antara lain adalah rangkaian inverter, non-inverter, integrator dan differensiator.</li>
+</ul>
+<h3 id="Karakteristik-OP-AMP"><a href="#Karakteristik-OP-AMP" class="headerlink" title="Karakteristik OP-AMP"></a>Karakteristik OP-AMP</h3><ol>
+<li>Impedansi ( Ukuran Resistansi pada sumber arus bolak-balik) masukan yang tak terhingga (Z in = 0 “Nol”)  Penguat yang ideal diharapkan tidak menarik arus masukan, artinya tidak ada arus yang masuk kedalam terminal 1 maupun 2 ( I1 =I2 = 0)</li>
+<li>Impedansi ( Ukuran Resistansi pada sumber arus bolak-balik) Keluaran atau Zout = 0 (nol) Terminal 3 merupakan keluaran penguat operasional, idealnya diharapkan bertindak sebagai terminal keluaran sebuah sumber sumber tegangan ideal. Tegangan antara terminal 3 dengan ground akan selalu sama dengan A (V2 . V1 ), dim</li>
+<li>Penguatan Tegangan Open-loop atau Av = ∞ (tak terhingga) Apabila dioperasikan<br>pada loop terbuka ( tidak ada umpan balik dari keluaran ke<br>masukan ), maka sebuah penguat opersaional ideal mempnyai<br>gain (penguatan) yang besarnya tak terhingga.</li>
+<li>Tegangan Offset Keluaran (Output Offset Voltage) atau Voo = 0 (nol) </li>
+<li>Lebar Pita (Bandwidth) atau BW = ∞ (tak terhingga)</li>
+<li>Karakteristik tidak berubah dengan suhu</li>
+</ol>
+<p><img src="/images/parameter.png" alt="tujuh"></p>
+<h3 id="CONTOH-SOAL"><a href="#CONTOH-SOAL" class="headerlink" title="CONTOH SOAL"></a><a href="/Y/C5">CONTOH SOAL</a></h3>
     </div>
 
     
