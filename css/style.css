@@ -305,19 +305,10 @@ content
   margin: 0.67em 0;
 }
 .post-content img[alt=andgate] {
-  border-style: none;
-  width: 40%;
-  display: block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-.post-content img[alt=judul] {
-  border-style: none;
+  border-style: solid;
+  border-color: #ffc0cb;
   border-radius: 5px;
-  width: 60%;
+  width: 40%;
   display: block;
   top: 0;
   bottom: 0;

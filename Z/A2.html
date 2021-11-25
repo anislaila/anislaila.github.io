@@ -59,19 +59,45 @@
 <td>Sensor PIR, PING dan DHT11 untuk mendeteksi hama wereng</td>
 </tr>
 </tbody></table>
-<p>Contoh sensor pada rangkaian<br>(Sensor LDR)<br><img src="/images/rangkaian.jpg"></p>
-<p>Komponen :</p>
-<ol>
-<li>Sumber tegangan dc 9 volt</li>
-<li>Dua buah resistor 47 kilo ohm dan 1 kilo ohm</li>
-<li>Satu buah variabel resistor</li>
-<li>Satu buah LDR</li>
-<li>Satu buah transistor type NPN</li>
-<li>Satu buah relay</li>
-<li>Satu buah lampu</li>
-</ol>
-<p>Dengan cara kerja :</p>
-<ul>
+<p>Contoh sensor pada rangkaian </p>
+<h2 id="A-Sensor-LDR"><a href="#A-Sensor-LDR" class="headerlink" title="A. Sensor LDR"></a>A. Sensor LDR</h2><p><img src="/images/rangkaian.jpg" alt="tujuh"></p>
+<h3 id="Daftar-Komponen-yang-digunakan"><a href="#Daftar-Komponen-yang-digunakan" class="headerlink" title="Daftar Komponen yang digunakan"></a>Daftar Komponen yang digunakan</h3><table>
+<thead>
+<tr>
+<th>Daftar Komponen</th>
+<th>Keterangan</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sumber tegangan DC</td>
+<td>9 volt</td>
+</tr>
+<tr>
+<td>Resistor (2)</td>
+<td>47 kilo ohm dan 1 kilo ohm</td>
+</tr>
+<tr>
+<td>Variabel Resistor</td>
+<td>-</td>
+</tr>
+<tr>
+<td>LDR (1)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Transistor (1)</td>
+<td>NPN</td>
+</tr>
+<tr>
+<td>Relay (1)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Lampu LED</td>
+<td>2-5V / 7 watt</td>
+</tr>
+</tbody></table>
+<h3 id="Dengan-cara-kerja"><a href="#Dengan-cara-kerja" class="headerlink" title="Dengan cara kerja :"></a>Dengan cara kerja :</h3><ul>
 <li>Saat siang hari atau saat LDR disinari cahaya akan memiliki nilai hambatan kecil yang menyebabkan arus mengalir melewati LDR yang menyebabkan arus tidak mengalir ke resistor 1KOhm yang terhubung ke basis transistor. (arus listrik lebih memilih mengalir ke tempat yang tidak memiliki hambatan)</li>
 <li>Kondisi ini membuat transistor tidak bekerja dikarenakan tidak ada arus yang mengalir pada transistor (dari kolektor ke emitor) yang artinya tidak akan ada arus yang mengalir pada relay. </li>
 <li>Dikarenakan relay tidak teraliri arus listrik maka relay tidak bekerja sehingga tidak dapat menarik saklar yang akan menghubungkan Arus listrik AC (PLN) ke Lampu. keadaan tersebut membuat lampu rumah, taman akan padam.</li>
@@ -79,6 +105,107 @@
 <li>Saat arus listrik mengalir pada basis transistor, maka transistor akan bekerja sebagai saklar yang membuat relay teraliri arus listrik dan akan bekerja menarik saklar sehingga saklar tertutup dan dapat mengalirkan arus AC (PLN) ke Lampu dan lampu dapat menyala. </li>
 </ul>
 <p>Dengan memanfaatkan rangkaian tersebut kita dapat menggunakan atau memodifikasinya sesuai dengan kreatifitas kita masing-masing. </p>
+<h2 id="B-Sensor-Suhu-LM35DZ"><a href="#B-Sensor-Suhu-LM35DZ" class="headerlink" title="B. Sensor Suhu (LM35DZ)"></a>B. Sensor Suhu (LM35DZ)</h2><p>LM35DZ merupakan sensor suhu berukuran kecil berbentuk seperti transistor yang mampu mengukur suhu hingga 100°C. Memiliki tengangan keluaran yang terskala linier dengan suhu terukur yaitu 1 mvolt / 1 °C sehingga sangat cocok digunakan untuk bahan percobaan atau pengaplikasian rangkaian elektronika lain.<br>Untuk rangkaian ini, LM35DZ digunakan sebagai pengontrol suhu, yaitu bekerja dengan cara ketika LM35DZ mendeteksi suhu lebih tinggi dari tingkat preset (ditetapkan oleh VR1), maka relay akan bekerja(dalam keadaan aktif/on). Ketika suhu turun di bawah suhu preset, relay akan mati. Rangkaian dapat didukung oleh AC atau DC 12V pasokan daya atau baterai (100mA minimal). Dengan skema dan layout rangkaian pengatur suhu sebagai berikut :<br>a. Skema<br><img src="/images/skema-rangkaiansuhu.jpg" alt="tujuh"></p>
+<p>b. layout PCB<br><img src="/images/layout-rangkaiansuhu.JPG" alt="tujuh"></p>
+<h2 id="Daftar-Komponen-yang-digunakan-1"><a href="#Daftar-Komponen-yang-digunakan-1" class="headerlink" title="Daftar Komponen yang digunakan"></a>Daftar Komponen yang digunakan</h2><table>
+<thead>
+<tr>
+<th>Daftar Komponen</th>
+<th>Nama</th>
+<th>Keterangan</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IC1</td>
+<td>Sensor</td>
+<td>LM35DZ</td>
+</tr>
+<tr>
+<td>IC2</td>
+<td>IC Regulator</td>
+<td>TL431</td>
+</tr>
+<tr>
+<td>IC3</td>
+<td>IC Penguat Operasional</td>
+<td>LM358</td>
+</tr>
+<tr>
+<td>LED1</td>
+<td>Lampu LED</td>
+<td>3mm atau 5mm</td>
+</tr>
+<tr>
+<td>Q1</td>
+<td>PNP transistor dengan E-C-B pin-keluar</td>
+<td>type A1015</td>
+</tr>
+<tr>
+<td>D1, D2</td>
+<td>Dioda</td>
+<td>1N4148</td>
+</tr>
+<tr>
+<td>D3, D4</td>
+<td>Dioda</td>
+<td>1N400x (x=2,,,,.7)</td>
+</tr>
+<tr>
+<td>ZD1</td>
+<td>Dioda Zener</td>
+<td>13V/ 400mW</td>
+</tr>
+<tr>
+<td>Preset (trim pot)</td>
+<td>Trimpot</td>
+<td>2.2K</td>
+</tr>
+<tr>
+<td>R1</td>
+<td>Resistor</td>
+<td>10K</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>Resistor</td>
+<td>4.7M</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>Resistor</td>
+<td>1.2K</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>Resistor</td>
+<td>1K</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>Resistor</td>
+<td>1K</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>Resistor</td>
+<td>33Ω</td>
+</tr>
+<tr>
+<td>C1</td>
+<td>Kapasitor Milar atau Keramik</td>
+<td>0.1 µF</td>
+</tr>
+<tr>
+<td>C2</td>
+<td>Kapasitor elektrolit</td>
+<td>470 µF atau 680 µF /16V min</td>
+</tr>
+<tr>
+<td>Relay</td>
+<td>Relay Double Pole Double Throw</td>
+<td>DC12V, Coil = 400 Ω atau lebih tinggi</td>
+</tr>
+</tbody></table>
 
     </div>
 

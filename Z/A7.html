@@ -30,7 +30,44 @@
         <hr>
     </div>
     <div class="post-content">
-        <h2 id="Contoh-Aplikasi-Penerapan-Transducer"><a href="#Contoh-Aplikasi-Penerapan-Transducer" class="headerlink" title="Contoh Aplikasi Penerapan Transducer"></a>Contoh Aplikasi Penerapan Transducer</h2><p>(Transducer elektro akustik)<br><img src="/images/mic.png" alt="andgate"><br>Mikrofon atau jenis jenis penerima input suara lain termasuk dalam penerapan dari transducer yang paling mudah kita lihat. Mikrofon mengubah gelombang suara yang mengenai diafragma menjadi sinyal listrik analog yang dapat dikirim melalui kabel atau yang terkini sudah secara nirkabel. Sementara untuk jenis perangkat output suara seperti speaker, earphone, juga merupakan transducer dengan prinsip kerja kebalikan dari mikrofon, yaitu mengubah sinyal elektrik menjadi suara.</p>
+        <h2 id="Contoh-Aplikasi-Penerapan-Transduser"><a href="#Contoh-Aplikasi-Penerapan-Transduser" class="headerlink" title="Contoh Aplikasi Penerapan Transduser"></a>Contoh Aplikasi Penerapan Transduser</h2><p>Transduser merupakan suatu alat yang dapat mengubah suatu bentuk energi ke bentuk energi lainnya. Bentuk-bentuk energi tersebut diantaranya seperti energi Listrik, mekanikal, elektromagnetik, cahaya, kimia, akustik (bunyi), dan panas. Pada umumnya, semua alat yang dapat mengubah atau mengkonversi suatu energi ke energi lainnya dapat disebut sebagai transduser. Terdapat beberapa jenis transduser dan berikut penerapan transduser dalam sebuah rangkaian elektronika.</p>
+<h3 id="1-Loudspeaker"><a href="#1-Loudspeaker" class="headerlink" title="1. Loudspeaker"></a>1. Loudspeaker</h3><p>Dalam rangkaian transduser loudspeaker dibawah ini menggunakan sebuah transistor BC547, kapasitor elco 100 μF, resistor 1K ohm serta speaker 4 ohm</p>
+<p><img src="/images/rangkaian-loudspeaker.gif" alt="tujuh"></p>
+<p>Transistor BC547 masuk dalam kategori amplifier transistor tipe NPN dan mampu menyalurkan daya hingga 500mW. Hal tersebut cukup untuk menggetarkan speaker hingga 2 Watt. </p>
+<h3 id="2-Antena"><a href="#2-Antena" class="headerlink" title="2. Antena"></a>2. Antena</h3><p>Rangkaian transduser selanjutnya adalah rangkaian transduser antena penerima mobil. Penguat antena mobil ini pada dasarnya bekerja optimal pada frekuensi kisaran 20-85 MHz, namun banyak juga yang menggunakan untuk penerima radio FM dengan sedikit modifikasi. Dengan total penguatan yang dihasilkan dari rangkaian ini mencapai 30 dB. Dalam perakitannya rangkaian harus sedekat mungkin dengan rangkaian peerima untuk mengurangi kerugian sinyal yang ditransmisikan antara rangkaian penguat dengan penerima itu sendiri.</p>
+<p><img src="/images/rangkaian-penerima-antena.jpg" alt="tujuh"></p>
+<p>Dengan rangkaian PCB sebagai berikut :<br><img src="/images/jalur-pcb-rangkaian-penguat-antena.jpg" alt="tujuh"></p>
+<p>Meskipun rangkaian ini dapat digunakan pada penerima radio komunikasi, namun jangan disatukan dengan rangkaian pemancarnya yang akan beresiko merusak rangkaian penguat.</p>
+<h3 id="3-Piezoelectric-Transduser"><a href="#3-Piezoelectric-Transduser" class="headerlink" title="3. Piezoelectric Transduser"></a>3. Piezoelectric Transduser</h3><p>Piezoelektric merupakan komponen yang dapat menghasilkam tegangan listrik sebagai respon dari surat perubahan tekanan mekanik. Dalam proyek ini Piezoelectric digunakan sebagai sensor tekanan mekanik (yang diperoleh dari getaran) dan hasil keluarannya yang berupa tegangan listrik dibaca melalui input analog arduino dan hasilnya dikirim ke komputer melalui serial RS-232, pada komputer data-data ini ditampilkan dalam bentuk grafik sinyal.<br>Dengan skema rangkaian sebagai berikut :<br><img src="/images/skema-piezo.png" alt="judul"><br><img src="/images/skema-piezo(2).png" alt="judul"></p>
+<p>Dengan daftar komponen sebagai berikut :</p>
+<table>
+<thead>
+<tr>
+<th>Daftar Komponen</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Dioda IN4002</td>
+</tr>
+<tr>
+<td>Relay 5 Volt</td>
+</tr>
+<tr>
+<td>R1 2M Ohm</td>
+</tr>
+<tr>
+<td>R2 330 Ohm</td>
+</tr>
+<tr>
+<td>J1 Piezoelectric</td>
+</tr>
+</tbody></table>
+<h3 id="4-Microphone"><a href="#4-Microphone" class="headerlink" title="4. Microphone"></a>4. Microphone</h3><p><img src="/images/mic.png" alt="andgate"><br>Mikrofon atau jenis jenis penerima input suara lain termasuk dalam penerapan dari transducer yang paling mudah kita lihat. Mikrofon mengubah gelombang suara yang mengenai diafragma menjadi sinyal listrik analog yang dapat dikirim melalui kabel atau yang terkini sudah secara nirkabel. Sementara untuk jenis perangkat output suara seperti speaker, earphone, juga merupakan transducer dengan prinsip kerja kebalikan dari mikrofon, yaitu mengubah sinyal elektrik menjadi suara.</p>
+<p><img src="/images/rangkaian-pre-amp-mic.JPG" alt="judul"></p>
+<p>Dengan daftar komponen sebagai berikut :<br>R4 = 560 Ohm<br>R3 = 5,6K<br>C2 = 47 μF/50V<br>R1 = 10K<br>C1 = 1 μF/50V<br>R2 = 220K<br>C3 = 4,7 μF/50V<br>VR = 50K<br>TR = C828<br>MIC = Mic Condenser</p>
+<p>Rangkaian ini menggunakan catudaya DC dari 5V hingga 25 V. Jika kesulitan dalam mencari kode type C838 dapat menggunakan persamaan type lain dengan jenis NPN.<br>Untuk Variable resistor (VR) jika tidak dibutuhkan untuk pengaturan volume lagi dapat dilepas. Misalkan pengaturan volume hanya di amplifier atau mixer saja. Rangkaian diatas pre amp mic diatas bisa juga dipergunakan untuk mic dynamic biasa. Cukup lepas Resistor R1. Jadi mic dyanamic kakinya dihubungkan ke C1 dan ke ground (-).</p>
+<p>Demikian juga sebaliknya, jika ingin merubah port mic dynamic bawaan amplifier agar dapat digunakan oleh mic condenser, cukup tambahkan resistor seperti rangkaian diatas (R1). Untuk sumber tegangan bisa mengambil dari kaki elco postif (+) dan yang  digunakan untuk block catu daya pre amp mic. Dengan modifikasi ini tidak dibutuhkan lagi rangkaian dan batterai, hanya mic condenser saja.</p>
+<p>© SCHEMA SEDERHANA PRE AMP MIC CONDENSOR MENGGUNAKAN TRANSISTOR<br>Source: <a target="_blank" rel="noopener" href="https://calaku.blogspot.com/2018/02/schema-sederhana-pre-amp-mic-condensor.html">https://calaku.blogspot.com/2018/02/schema-sederhana-pre-amp-mic-condensor.html</a></p>
 
     </div>
 
